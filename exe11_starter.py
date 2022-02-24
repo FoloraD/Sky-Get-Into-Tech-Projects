@@ -18,7 +18,7 @@ print(line_of_hypens * (len(Belgium)))      # prints out 81 hypens
 # Part b) The string with the comma separators replaced by colons ':'
 print(Belgium.replace(",", ":"))  # prints string replacing all commas to colons
 
-population_belgium = Belgium[8:16]
+population_belgium = Belgium[8:16]  # refactor - turn string to list & then slice
 print(population_belgium)  # output 10445852
 
 city_number = Belgium.index("737966")
@@ -27,5 +27,5 @@ print(city_number) # position 26
 population_of_the_capital_city = Belgium[26:32]
 print(population_of_the_capital_city)
 
-total_population = population_belgium + population_of_the_capital_city
+total_population = int(population_belgium) + int(population_of_the_capital_city)
 print(total_population)
