@@ -1,4 +1,5 @@
-# Import random module import random
+#Importrandom module
+import random
 
 
 # Function for user input
